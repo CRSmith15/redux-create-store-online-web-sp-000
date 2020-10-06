@@ -6,7 +6,11 @@ function createStore(){
     render();
   };
 
-  return { dispatch };
+  function getState(){
+    return state;
+  }
+
+  return { dispatch, state };
 }
 
 function reducer(state = { count: 0 }, action) {
