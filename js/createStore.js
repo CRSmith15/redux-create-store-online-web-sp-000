@@ -10,7 +10,7 @@ function createStore(){
     return state;
   }
 
-  return { dispatch, state };
+  return { dispatch, getState };
 }
 
 function reducer(state = { count: 0 }, action) {
