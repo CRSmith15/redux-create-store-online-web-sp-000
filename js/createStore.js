@@ -29,7 +29,7 @@ function render() {
   let container = document.getElementById('container');
   container.textContent = store.getState().count;
 };
-let store = createStore();
+let store = createStore(reducer);
 dispatch({ type: '@@INIT' })
 let button = document.getElementById('button');
 
